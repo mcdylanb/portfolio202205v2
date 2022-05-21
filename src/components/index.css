@@ -23,7 +23,9 @@ body {
     margin:0;
     font-size: 55px;
     line-height: 1.2;
-    font-family:  'Raleway', sans-serif;;
+    font-family:  'Raleway', sans-serif;
+    animation: HeroAnimation;
+    animation-duration: 3s;
 }
 .Hero p {
     color: black;
@@ -41,4 +43,16 @@ body {
     text-decoration: none;
     color: white;
     border-radius: 10px;
+}
+
+@keyframes HeroAnimation {
+    0% {
+        opacity: 0;
+        transform:translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform:translateY(0px);
+    }
+    
 }
